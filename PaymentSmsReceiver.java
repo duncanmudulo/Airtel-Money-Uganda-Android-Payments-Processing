@@ -1,5 +1,4 @@
-package com.electron.apps;
-
+package electron
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -155,7 +154,7 @@ public class PaymentSmsReceiver extends BroadcastReceiver {
 
                 try {
 
-                    String link ="http://192.168.206.1/256Play/insertid.php";
+                    String link ="server_side/insert_id.php";
                     String data  = URLEncoder.encode("id", "UTF-8")
                             + "=" + URLEncoder.encode(finalTrans_id, "UTF-8");
                     data += "&" + URLEncoder.encode("payment_amount", "UTF-8")
